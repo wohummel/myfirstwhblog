@@ -1,0 +1,50 @@
+dir
+cd ..
+dir
+cd todo
+dir
+dir core
+cd core
+dir
+type models.py
+cd ..
+dir /s models.py
+cd todolist
+type models.py
+cd ..
+django-admin.py djangogirls
+django-admin.py startproject djangogirls
+dir
+cd djangogirls
+dir
+dir /s
+manage.py migrate
+manage.py startapp blog
+cd blog
+cd ..\..
+dir /s settings.py
+cd djangogirls
+dir
+manage.py createsuperuser
+doskey /history
+manage.py makemigrations blog
+doskey /history >history.txt
+manage.py delete_squashed_migrations todolist
+manage.py makemigrations todolist
+manage.py migrate
+history
+dir
+cd todo
+dir
+cd ../..
+dir
+manage.py startapp blog-project
+dir /s manage.py
+dir todo
+django-admin.py startproject blog-project
+django-admin.py startproject blog_project
+cd blog_project
+dir
+cd blog_project
+dir
+type urls.py
