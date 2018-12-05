@@ -4,7 +4,19 @@
 </head>
 
 <body>
-    <p>Halli-Hallo!</p>
-    <p>Es funktioniert!</p>
+<div>
+    <h1><a href="/">Wolfis First Blog</a></h1>
+</div>
+
+
+{% for post in posts %}
+    <div>
+        <p>---------------------------------------------------------------</p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 </body>
 </html>
+
