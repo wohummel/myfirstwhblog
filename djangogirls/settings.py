@@ -25,7 +25,7 @@ SECRET_KEY = '-8n1^amjh2j$*&@g1t#*r920v524h9d+fwg6#=1q-n0%lv1rn9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [wohummel.pythonanywhere.com]
+ALLOWED_HOSTS = []
 
 
 # Application definition
